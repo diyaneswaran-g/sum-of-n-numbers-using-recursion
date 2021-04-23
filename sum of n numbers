@@ -1,0 +1,17 @@
+#include <stdio.h>
+ int addition(int a);
+ int main()
+ {
+    int a;
+    printf("Enter a +ve number");
+    scanf("%d",&a);
+    printf("Sum = %d", addition(a));
+    return 0;
+ }
+int addition(int  a)
+ {
+  if (a!= 0)
+        return a + addition(a-1);
+    else
+        return a;
+ }
